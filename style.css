@@ -1,0 +1,79 @@
+:root {
+  --cor-fundo: #01080E;
+  --cor-principal: #0B0D20;
+  --cor-secundaria: #212333;
+  --cor-destaque: #2BDEFD;
+  --cor-texto: #D7F9FF;
+  --font-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: var(--font-principal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 10px;
+}
+
+.caixa-principal {
+  background-color: var(--cor-principal);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(43, 222, 253, 0.3);
+}
+
+h1 {
+  color: var(--cor-destaque);
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+button {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+  border: none;
+  border-radius: 15px;
+  padding: 15px 20px;
+  margin: 8px 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 180px;
+  user-select: none;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--cor-destaque);
+  color: var(--cor-principal);
+  box-shadow: 0 6px 14px rgba(43, 222, 253, 0.7);
+  outline: none;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.caixa-alternativas {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.caixa-perguntas {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  min-height: 60px;
+}
